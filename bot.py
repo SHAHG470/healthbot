@@ -1,4 +1,4 @@
-# file: main.py
+# file: main.p
 import streamlit as st
 import requests
 import re
@@ -240,7 +240,7 @@ if not GROQ_API_KEY:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama-3.3-70b-versatile-instruct"
+GROQ_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
 
 # Proactive warning if key is missing
 if not GROQ_API_KEY:
@@ -1338,5 +1338,6 @@ elif st.session_state.current_page == 'lab':
     """)
 
     st.info("Check back soon for these new features!")
+
 
 
