@@ -240,7 +240,7 @@ if not GROQ_API_KEY:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama-3.3-70b-versatile-instruct""
+GROQ_MODEL = "llama-3.3-70b-versatile-instruct"
 
 # Proactive warning if key is missing
 if not GROQ_API_KEY:
@@ -1338,4 +1338,5 @@ elif st.session_state.current_page == 'lab':
     """)
 
     st.info("Check back soon for these new features!")
+
 
