@@ -240,7 +240,7 @@ if not GROQ_API_KEY:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama3-8b-8192"
+GROQ_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct""
 
 # Proactive warning if key is missing
 if not GROQ_API_KEY:
@@ -1336,4 +1336,5 @@ elif st.session_state.current_page == 'lab':
     - Sleep Quality Analyzer
     - Stress Level Assessment
     """)
+
     st.info("Check back soon for these new features!")
